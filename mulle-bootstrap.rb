@@ -1,9 +1,9 @@
 class MulleBootstrap < Formula
   homepage "http://www.mulle-kybernetik.com/software/git/mulle-bootstrap"
   desc "Dependency manager for cross-platform projects"
-  url "http://www.mulle-kybernetik.com/software/git/mulle-bootstrap/tarball/3.2.3"
-  version "3.2.3"
-  sha256 "87de22d772b33a53e9e4520a8e26f5392c750581d49cdd9ae76d4b3ebc8aa850"
+  url "http://www.mulle-kybernetik.com/software/git/mulle-bootstrap/tarball/3.3.0"
+  version "3.3.0"
+  sha256 "9bf91d80efb7c8fc2adf2a4a0112202f88bcb29a063a8f14fda0262f9849a071"
 
   def install
      system "./install.sh", "#{prefix}"
