@@ -1,9 +1,9 @@
 class MulleBrew < Formula
   homepage "https://www.mulle-kybernetik.com/software/git/mulle-brew"
   desc "Dependency manager for homebrew depedencies"
-  url "http://www.mulle-kybernetik.com/software/git/mulle-brew/tarball/3.5.0"
-  version "3.5.0"
-  sha256 "bb0d336108bfd9fbdaba88f40e6fb5ad28af0dee18bce88fe735315a94e6d5a3"
+  url "http://www.mulle-kybernetik.com/software/git/mulle-brew/tarball/3.5.1"
+  version "3.5.1"
+  sha256 "9481731bb5e7d2767007c794a74ba6a1b4b130b54226aa2d4ddcfcf4369161e6"
 
   depends_on "mulle-kybernetik/alpha/mulle-bootstrap"
 
