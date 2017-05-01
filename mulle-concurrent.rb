@@ -14,7 +14,7 @@ class MulleConcurrent < Formula
    depends_on 'cmake' => :build
 
    def install
-      system "mulle-install", "-e", --prefix", "#{prefix}", "--homebrew"
+      system "mulle-install", "-e", "--prefix", "#{prefix}", "--homebrew"
    end
 
    test do
