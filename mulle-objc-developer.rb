@@ -1,23 +1,17 @@
 class MulleObjcDeveloper < Formula
-   homepage "/mulle-objc-developer"
+   homepage "https://github.com/mulle-nat/mulle-objc-developer"
    desc "mulle-objc Developer Environment"
-   url "https://github.com/mulle-nat/mulle-objc-developer/archive/0.5.1.tar.gz"
-   version "0.5.1"
-   sha256 "24e88e6ec772b8002a77c09ac0c5c2cf5ef02326977cf2f3c3180d105d81c31c"
-
-   depends_on 'mulle-kybernetik/alpha/mulle-allocator'
-   depends_on 'mulle-kybernetik/alpha/mulle-c11'
-   depends_on 'mulle-kybernetik/alpha/mulle-concurrent'
-   depends_on 'mulle-kybernetik/alpha/mulle-container'
-   depends_on 'mulle-kybernetik/alpha/mulle-vararg'
-   depends_on 'mulle-kybernetik/alpha/mulle-thread'
-   depends_on 'mulle-kybernetik/alpha/mulle-objc-runtime'
-   depends_on 'mulle-kybernetik/alpha/MulleObjC'
+   url "https://github.com/mulle-nat/mulle-objc-developer/archive/0.5.1.3.tar.gz"
+   version "0.5.1.3"
+   sha256 "00e4ca8b5bb6eb938108e116f9ae27b488b3a6077a02e04cd9ac08de9b34498e"
+   depends_on 'mulle-kybernetik/alpha/mulle-bootstrap'
+   depends_on 'mulle-kybernetik/alpha/mulle-build'
    depends_on 'codeon-gmbh/software/mulle-clang'
+   depends_on 'mulle-kybernetik/alpha/mulle-bootstrap' => :build
    depends_on 'mulle-kybernetik/alpha/mulle-build' => :build
 
    def install
-      system "mulle-install", "--prefix", "#{prefix}", "--homebrew"
+      system "mulle-install", "-e", "--prefix", "#{prefix}", "--homebrew"
    end
 
    test do
