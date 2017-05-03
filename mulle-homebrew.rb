@@ -9,7 +9,7 @@ class MulleHomebrew < Formula
    depends_on 'mulle-kybernetik/alpha/mulle-build' => :build
 
    def install
-      system "mulle-install", "-vvv", -"V", "--prefix", "#{prefix}", "--homebrew"
+      system "mulle-install", "-vvv", "-V", "--prefix", "#{prefix}", "--homebrew"
    end
 
    test do
